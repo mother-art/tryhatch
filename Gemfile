@@ -60,3 +60,7 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem 'google-api-client', :require => 'google/apis/customsearch_v1'
+gem 'pry-rails'
+gem 'dotenv-rails'

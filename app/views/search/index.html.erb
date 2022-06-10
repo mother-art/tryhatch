@@ -1,2 +1,12 @@
-<h1>Search#index</h1>
-<p>Find me in app/views/search/index.html.erb</p>
+<body>
+<form action="search#index" method="GET">
+    <input type="text" name="key_word" />
+    <input type="submit" />
+</form>
+<%if !@result.nil?
+  for item in @result do%>
+    <a href=<%= item[:link] %> ><%= item[:title] %></a>
+    <br>
+<%end
+end%>
+</body>
